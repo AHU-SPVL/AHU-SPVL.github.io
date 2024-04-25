@@ -6,88 +6,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>安徽大学—结构模式与视觉学习研究组  Anhui University-Structural Patterns and Visual Learning (AHU-SPVL) Group</title>
+  
   <style>
+	  
+
+h2 {
+	padding-left:10px;
+    border-bottom: 1px solid #aaaaaa;
+    width:400px;
+    box-shadow: 0  8px 6px -6px rgba(0, 0, 0, 0.1);
+}
+
+	
     .header {
       background-image: url('picture/title.png');
       background-size: cover;
       background-position: center;
-      height: 100px;
-/*       text-align: center; /* 将文本水平居中 */ */
-      padding-top: 10px;
-      padding-bottom: 10px;
-      position: relative; /* 设为相对定位，以便容器内的绝对定位元素相对于该容器定位 */
+      height: 70px;
+      position: relative; 
     }
-    .header h1 {
-      position: absolute; /* 将副标题设为绝对定位 */
-      bottom: 40px; /* 距离底部 10px */
-/*       right: 800px; /* 距离右边 10px */ */
-      left: 50%;
-      font-size: 24px;
+
+	.chinese-heaher-title {
+	  margin:0;
+	  position: absolute; 
+	  font-size: 24px;
+	  color: rgb(46, 84, 161);
+	  top:5px;
+	  
+	}
+	
+    .english-heaher-title {
+	  margin:0;
+      position: absolute; 
+      font-size: 18px;
       color: rgb(46, 84, 161);
-    }
-    .header .sub-title {
-      position: absolute; /* 将副标题设为绝对定位 */
-      bottom: 1px; /* 距离底部 10px */
-/*       right: 400px; /* 距离右边 10px */ */
-      left: 50%;
-      font-size: 24px;
-      color: rgb(46, 84, 161);
+	  bottom:5px;
     }
     
-    .button-container {
+.button-container {
       background-image: url('picture/blue.png'); 
-      background-size: cover; /* 图片铺满整个容器 */
-      background-position: center; /* 图片居中 */
-      text-align: center; /* 让按钮在容器中水平居中 */
+      background-size: cover;
+      background-position: center;
+      text-align: center;
     }
+    
     .button-container button {
-      display: inline-block; /* 使按钮水平排列 */
-      background-color: transparent; /* 设置按钮背景为透明 */
-      border: 2px solid transparent; /* 设置按钮边框为透明 */
-      width: 160px; /* 设置按钮宽度 */
-      height: 50px; /* 设置按钮高度 */
-      margin: 0 16px; /* 设置按钮之间的水平间距 */
-      font-size: 16px; /* 设置按钮文字大小 */
-      color: rgb(255, 255, 255);; /* 文本颜色 */
+      display: inline-block;
+      background-color: transparent;
+      border: 2px solid transparent;
+      width: 160px;
+      height: 50px;
+      font-size: 16px;
+      color: white;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s; 
     }
+    
+    .button-container button:hover {
+      background-color: rgb(46, 84, 161); 
+      color: white; 
+    }
+	
   </style>
 </head>
 <body>
+	
+	
   <div class="header">
-  <h1>安徽大学—结构模式与视觉学习研究组</h1>
-  <h1 class="sub-title">Anhui University-Structural Patterns and Visual Learning (AHU-SPVL) Group</h1>
+  <h1 class="chinese-heaher-title">安徽大学—结构模式与视觉学习研究组</h1>
+  <h1 class="english-heaher-title">Anhui University-Structural Patterns and Visual Learning (AHU-SPVL) Group</h1>
   </div>
   
   <div class="button-container">
-    <button onclick="window.location.href='https://AHU-SPVL.github.io/'">首页</button>
+    <button onclick="window.location.href='index.html'">首页</button>
     <button onclick="window.location.href='allpaper.html'">发表论文</button>
     <button onclick="window.location.href='codeanddataset.html'">数据集和源码</button>
     <button onclick="window.location.href='other.html'">其它</button>
   </div>
+  
+  
 </body>
 
-<br />
 
 
-</tr></table>
-
-<h2>本组概况</h2>
-<p>安徽大学结构模式与视觉学习研究组主要依托安徽大学计算机科学与技术学院，多模态认知计算安徽省重点实验室等平台。研究组致力于结构模式识别理论方法及其在计算机视觉与图数据计算中的应用研究。
+<h2 >本组概况</h2>
+<p style="margin-left: 40px;margin-right:100px;line-height: 2;text-align: justify;">安徽大学结构模式与视觉学习研究组主要依托安徽大学计算机科学与技术学院，多模态认知计算安徽省重点实验室等平台。研究组致力于结构模式识别理论方法及其在计算机视觉与图数据计算中的应用研究。
     主要研究方向包括：图机器学习、事件视觉计算、多模态信息融合，细粒度视觉分类、医学影像分析、遥感图像分析以及AI for Science等。部分科研成果应用在安徽省医学影像云平台。
     研究组目前承担国家自然科学基金项目、安徽省重点研发计划、安徽省优青、安徽省教育厅协同创新项目等国家和省部级科研项目。
     研究组现有专职教师4人，包括教授1人，副教授2人，讲师1人组成，在读博士、硕士生近50人。形成了一支以青年科研骨干为主体和研究生队伍为主力的研究梯队。  
-<p>课题组招收博士研究生、硕士研究生，并接受该领域的博士后及访问学者。</p>
+<p style="margin-left: 40px;margin-right:100px; color:red; font-weight: bold;">课题组招收博士研究生、硕士研究生，并接受该领域的博士后及访问学者！</p>
 
 
 
    
   
   
-<h2>师资介绍</h2>
-  
+<h2 style="	margin-top:50px;">师资介绍</h2>
 
 
-<table class="imgtable">
+<table class="imgtable" style="margin-left: 40px;">
   <tr>
     <td>
       <a href="https://jiangboahu.github.io/jiangbo.github.io/">
@@ -155,11 +172,9 @@
 </table>
 
 
-
-
   
 
-<h2>学生成员</h2>  
+<h2 style="margin-top:50px;">学生成员</h2>  
 <style>
   .student-list ul {
     list-style: none; 
@@ -196,38 +211,17 @@
 
 
   
-<h2>新闻</h2>
+<h2 style="margin-top:50px;">新闻</h2>
 
-<!-- <ul>
-  <li><a href="news/new1.html">新闻1: 新闻1的内容</a></li>
-  <li><a href="news/new2.html">新闻2: 新闻2的内容</a></li>
-</ul> -->
 <ul>
-  <li>新闻1: 新闻1的内容</li>
-  <li>新闻2: 新闻2的内容</li>
+<li><p>[04/2024]  The paper "Learning Graph Attentions via Replicator Dynamics" has been accepted by <b>TPAMI 2024</b> !
+<li><p>[03/2024]  The paper "MutualFormer: Multi-Modal Representation Learning via Cross-Diffusion Attention" has been accepted by <b>IJCV 2024</b> !
+<li><p>[02/2024]  The paper "Event Stream-based Visual Object Tracking: A High-Resolution Benchmark Dataset and A Novel Baseline" has been accepted by <b>CVPR 2024</b> !
+<li><p>[12/2023]  The paper "HARDVS: Revisiting Human Activity Recognition with Dynamic Vision Sensors" has been accepted by <b>AAAI 2024</b> !
 </ul>
   
 
-<h2>Selected Publications</h2> 
-
-<!-- <ul> 
-<li><p><a href="">State Space Model for New-Generation Network Alternative to Transformers: A Survey</a> <br />
- Xiao Wang, Shiao Wang, Yuhe Ding, Yuehang Li, Wentao Wu, Yao Rong, Weizhe Kong, Ju Huang, Shihao Li, Haoxiang Yang, Ziwen Wang, <b>Bo Jiang*</b>, Chenglong Li, Yaowei Wang, Yonghong Tian, Jin Tang<br />
-<i>arXiv preprint arXiv:2404.09516 2024
-  <a href=""></a>
-  <a href=""></a>
-</i></p>
-</li>
-</ul> 
-
-  
-<ul> 
-<li><p><a href="">Robust Audio-Visual Contrastive Learning for Proposal-based Self-supervised Sound Source Localization in Videos</a> <br />
-  Hanyu Xuan, Zhiliang Wu, Jian Yang, <b>Bo Jiang*</b>, Lei Luo*, Xavier Alameda-Pineda, Yan Yan<br />
-<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2024
-</i></p>
-</li>
-</ul>  -->
+<h2 style="margin-top:50px;">Selected Publications</h2> 
 
 
 	<ul>
